@@ -3,7 +3,7 @@ import React from 'react';
 
 // Internal imports
 // -- Organisms
-import Header from '../components/organisms/header';
+import Header from '../components/organisms/header/header';
 
 const About = () => (
   <div>
