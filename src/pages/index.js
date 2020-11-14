@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 // Internal imports
 // -- Organisms
-import Header from '../components/organisms/header';
+import Header from '../components/organisms/header/header';
 
 const Home = () => (
   <div style={{ color: 'purple' }}>
