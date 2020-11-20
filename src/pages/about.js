@@ -2,14 +2,13 @@
 import React from 'react';
 
 // Internal imports
-// -- Organisms
-import Header from '../components/organisms/header/header';
+// -- HOC
+import Layout from '../components/_hoc/layout/Layout';
 
 const About = () => (
-  <div>
-    <Header headerText='About Gatsby!' />
+  <Layout>
     <p>Such wow. very React!</p>
-  </div>
+  </Layout>
 );
 
 export default About;

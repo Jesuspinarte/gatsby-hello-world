@@ -2,13 +2,13 @@
 import React from 'react';
 
 // Internal imports
+// -- HOC
+import Layout from '../components/_hoc/layout/Layout';
 // -- Molecules
-import User from '../components/molecules/user/user';
-// -- Organisms
-import Container from '../components/hoc/container/container';
+import User from '../components/molecules/user/User';
 
 const About = () => (
-  <Container>
+  <Layout>
     <h1>About CSS Modules</h1>
     <p>CSS Modules are cool</p>
     <User
@@ -21,7 +21,7 @@ const About = () => (
       avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
       excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     />
-  </Container>
+  </Layout>
 );
 
 export default About;

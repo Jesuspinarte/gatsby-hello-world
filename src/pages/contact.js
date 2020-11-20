@@ -1,17 +1,14 @@
 // External imports
 import React from 'react';
-import { Link } from 'gatsby';
 
 // Internal imports
-// -- Organisms
-import Header from '../components/organisms/header/header';
+// -- HOC
+import Layout from '../components/_hoc/layout/Layout';
 
 const Contact = () => (
-  <div style={{ color: 'teal' }}>
-    <Link to='/'>Home</Link>
-    <Header headerText='Contact' />
+  <Layout>
     <p>Send us a message!</p>
-  </div>
+  </Layout>
 );
 
 export default Contact;

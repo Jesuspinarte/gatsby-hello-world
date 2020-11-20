@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Internal imports
-import classes from './user.module.css';
+import classes from './User.module.css';
 
 const User = ({ avatar, username, excerpt }) => (
   <div className={classes.user}>

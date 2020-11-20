@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Internal imports
-import classes from './container.module.css';
+import classes from './Container.module.css';
 
 const Container = ({ children }) => (
   <div className={classes.container}>
