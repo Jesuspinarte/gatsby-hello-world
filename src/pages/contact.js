@@ -5,10 +5,9 @@ import React from 'react';
 // -- HOC
 import Layout from '../components/_hoc/layout/Layout';
 
-const Contact = () => (
+export default () => (
   <Layout>
     <p>Send us a message!</p>
   </Layout>
 );
 
-export default Contact;

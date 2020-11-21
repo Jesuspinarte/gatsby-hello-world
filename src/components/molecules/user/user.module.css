@@ -1,31 +1,31 @@
-.user {
+.m_user {
   display: flex;
   align-items: center;
   margin: 0 auto 12px auto;
 }
 
-.user:last-child {
+.m_user:last-child {
   margin-bottom: 0;
 }
 
-.avatar {
+.m_user__avatar {
   flex: 0 0 96px;
   width: 96px;
   height: 96px;
   margin: 0;
 }
 
-.description {
+.m_user__description {
   flex: 1;
   margin-left: 18px;
   padding: 12px;
 }
 
-.username {
+.m_user__username {
   margin: 0 0 12px 0;
   padding: 0;
 }
 
-.excerpt {
+.m_user__excerpt {
   margin: 0;
 }

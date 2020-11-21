@@ -5,8 +5,3 @@ html * {
 body {
   margin: 0;
 }
-
-.container {
-  margin: 3rem auto;
-  max-width: 800px;
-}

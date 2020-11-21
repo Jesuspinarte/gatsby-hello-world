@@ -3,15 +3,16 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 // Internal imports
+import classes from './Header.module.css';
 // -- Atoms
 import ListLink from '../../atoms/list-link/ListLink';
 
-const Header = () => (
-  <header style={{ margin: '3rem auto', maxWidth: 650, padding: '0' }}>
+export default () => (
+  <header className={classes.o_header}>
     <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-      <h3 style={{ display: `inline` }}>MySweetSite</h3>
+      <h3 className={classes.o_header__title}>MySweetSite</h3>
     </Link>
-    <ul style={{ listStyle: `none`, float: `right` }}>
+    <ul className={classes.o_header__list}>
       <ListLink toGo="/">Home</ListLink>
       <ListLink toGo="/about/">About</ListLink>
       <ListLink toGo="/contact/">Contact</ListLink>
@@ -19,5 +20,3 @@ const Header = () => (
     </ul>
   </header>
 );
-
-export default Header;

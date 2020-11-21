@@ -7,7 +7,7 @@ import Layout from '../components/_hoc/layout/Layout';
 // -- Molecules
 import User from '../components/molecules/user/User';
 
-const About = () => (
+export default () => (
   <Layout>
     <h1>About CSS Modules</h1>
     <p>CSS Modules are cool</p>
@@ -23,5 +23,3 @@ const About = () => (
     />
   </Layout>
 );
-
-export default About;

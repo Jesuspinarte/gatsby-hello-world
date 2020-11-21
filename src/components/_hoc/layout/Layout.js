@@ -1,16 +1,30 @@
 // External imports
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
 // Internal imports
+import classes from './Layout.module.css';
 // -- Organisms
 import Header from '../../organisms/header/Header';
 
-const Layout = ({ children }) => (
-  <div style={{ margin: '3rem auto', maxWidth: 650, padding: '0 1rem' }}>
-    <h3>Jesúspinarte</h3>
-    <Header />
-    {children}
-  </div>
-);
+export default ({ children }) => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  );
 
-export default Layout;
+  return (
+    <div className={classes.layout}>
+      <h3>{data.site.siteMetadata.title}</h3>
+      <Header />
+      {children}
+    </div>
+  );
+};
